@@ -1,0 +1,33 @@
+#about {
+	display: flex;
+	flex-direction: column;
+	padding-block: 10rem;
+
+	background-color: var(--brand-beige);
+	position: relative;
+}
+
+#about h3 {
+	font-size: 1.4rem;
+	line-height: 150%;
+	letter-spacing: 0.08em;
+
+	color: var(--brand-primary);
+	margin-bottom: 1.6rem;
+}
+
+#about h2 {
+	font-size: 3rem;
+	line-height: 3.9rem;
+
+	color: var(--gray-headline);
+	margin-bottom: 2.4rem;
+}
+
+#about p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: var(--gray-paragraph);
+	margin-bottom: 6rem;
+}

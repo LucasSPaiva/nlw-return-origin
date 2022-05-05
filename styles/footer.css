@@ -1,0 +1,41 @@
+footer {
+	background-color: var(--brand-primary);
+	width: 100%;
+
+	padding-block: 6rem;
+}
+
+footer #icon-logo {
+	width: 23rem;
+	height: auto;
+
+	margin-bottom: 2.4rem;
+}
+
+footer #icon-logo path {
+	fill: white;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: column;
+
+	gap: 1.2rem;
+
+	margin-bottom: 3.2rem;
+}
+
+footer ul#copyright li {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.1rem;
+	color: var(--brand-beige);
+}
+
+footer ul.social-links {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	gap: 3.2rem;
+}

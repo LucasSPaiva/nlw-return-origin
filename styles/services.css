@@ -1,0 +1,57 @@
+#services {
+	margin-block: 10rem;
+}
+
+#services .text {
+	text-align: center;
+}
+
+#services .text h3 {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	line-height: 150%;
+	letter-spacing: 0.08em;
+	color: var(--brand-primary);
+
+	margin-bottom: 1.6rem;
+}
+
+#services .text h1 {
+	font-size: 3rem;
+	line-height: 3.9rem;
+
+	color: var(--gray-headline);
+
+	margin-bottom: 6rem;
+}
+
+#services .cards {
+	display: grid;
+	gap: 3.2rem;
+}
+
+.cards .card {
+	padding: 2.4rem;
+
+	background-color: white;
+	border-radius: 0.6rem;
+	border: 1px solid var(--brand-light-02);
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.cards .card h2 {
+	font-size: 2.4rem;
+	line-height: 3.1rem;
+
+	color: var(--gray-headline);
+}
+
+.cards .card p {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 150%;
+	color: var(--gray-paragraph);
+}

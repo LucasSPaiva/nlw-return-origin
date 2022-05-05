@@ -1,0 +1,43 @@
+#contact {
+	display: flex;
+	flex-direction: column;
+	padding-block: 10rem;
+}
+
+#contact .content {
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+}
+
+#contact .content h2 {
+	font-size: 3rem;
+	line-height: 3.9rem;
+
+	color: var(--gray-headline);
+}
+
+#contact .content ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+#contact .content ul li {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+
+#contact .content ul li {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 150%;
+	color: var(--gray-paragraph);
+}
+
+/* O botão foi estilizado no hero.css */
+#contact .button {
+	margin-left: 0;
+}
+

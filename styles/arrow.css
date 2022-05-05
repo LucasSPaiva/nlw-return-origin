@@ -1,0 +1,21 @@
+#arrow {
+	position: fixed;
+	z-index: 3;
+
+	bottom: 2rem;
+	right: 2rem;
+
+	opacity: 0;
+	transform: translateY(100%);
+	transition: 0.3s all;
+}
+
+#arrow.scroll {
+	opacity: 1;
+	transform: translateY(0%);
+}
+
+#arrow a #icon-arrow {
+	width: 5rem;
+	height: auto;
+}
