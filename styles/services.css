@@ -55,3 +55,24 @@
 	line-height: 150%;
 	color: var(--gray-paragraph);
 }
+
+@media (min-width: 400px) {
+	#services .card {
+		max-width: 37rem;
+		margin-inline: auto;
+	}
+}
+
+@media (min-width: 700px) {
+	#services .cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1000px) {
+	#services .cards {
+		grid-template-columns: 1fr 1fr 1fr;
+		max-width: 118rem;
+		margin-inline: auto;
+	}
+}

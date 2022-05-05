@@ -36,7 +36,7 @@ ScrollReveal({
 	distance: '30px',
 	duration: 700
 }).reveal(`
-	#hero .button,
+  #hero .content,
   #hero img, 
   #hero .details .items, 
   #services,
