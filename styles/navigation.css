@@ -140,3 +140,66 @@ body.menu-expanded #icon-logo path {
 body.menu-expanded button path {
 	stroke: white;
 }
+
+@media (min-width: 1024px) {
+	/* Reset para conseguir estilizar a barra de navegação */
+
+	nav#navigation * {
+		margin: 0;
+		padding: 0;
+		visibility: initial;
+		display: initial;
+		opacity: initial;
+		flex-direction: initial;
+		position: initial;
+		font-size: initial;
+		font-weight: initial;
+		transform: initial;
+		color: initial;
+		background-color: initial;
+	}
+	nav#navigation {
+		display: flex;
+		justify-content: space-around;
+	}
+	nav#navigation {
+		margin-inline: auto;
+	}
+
+	nav#navigation .menu .social-links,
+	nav#navigation .menu .social-links,
+	nav#navigation button {
+		display: none;
+	}
+
+	nav#navigation .menu ul {
+		display: flex;
+		align-items: center;
+		gap: 5rem;
+	}
+
+	nav#navigation .menu ul li a {
+		font-size: 1.6rem;
+		line-height: 2.1rem;
+		color: var(--brand-primary);
+	}
+
+	nav#navigation.scroll .menu ul li a {
+		color: var(--brand-light);
+	}
+
+	nav#navigation .menu ul .button {
+		padding: 1rem 2.4rem;
+
+		border: 1px solid var(--brand-primary);
+		color: var(--brand-primary);
+		border-radius: 4rem;
+	}
+
+	nav#navigation .menu ul .button:hover,
+	nav#navigation.scroll .menu ul .button {
+		background: var(--brand-primary);
+		border: 1px solid var(--brand-light);
+		color: var(--brand-light);
+	}
+}

@@ -179,3 +179,8 @@
 		padding-left: 6.5rem;
 	}
 }
+@media (min-width: 1024px) {
+	#hero {
+		padding-top: 5rem;
+	}
+}
