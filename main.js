@@ -1,3 +1,5 @@
+// alert('Ainda não está acabado!!')
+
 // Resolve o problema de carregamento do js depois da página
 window.addEventListener('scroll', onScroll)
 
@@ -50,6 +52,3 @@ ScrollReveal({
 	footer,
 	footer #copyright,
 	footer #social-links`)
-
-
-alert('Ainda não está acabado!!')

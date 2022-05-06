@@ -65,7 +65,7 @@
 	background-color: var(--brand-primary-hover);
 }
 
-#hero img {
+#hero .content img {
 	width: 26.4rem;
 	display: block;
 	margin-inline: auto;
@@ -116,23 +116,56 @@
 	color: var(--brand-primary);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 400px) {
 	#hero .details {
-		flex-direction: row;
-		justify-content: space-evenly;
-
-		padding: 6rem 0;
+		max-width: 30rem;
+		margin-inline: auto;
 	}
-
-	#hero .content {
-		min-width: 80vw;
+	#hero .content .wrapper {
+		max-width: 45rem;
 		margin-inline: auto;
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
+	#hero::before {
+		height: 100%;
+	}
+
 	#hero .content {
-		max-width: 80vw;
+		display: flex;
+		justify-content: center;
+		max-width: 70rem;
+
+		margin-inline: auto;
+	}
+
+	#hero .content .wrapper {
+		flex: 1;
+	}
+
+	#hero .content img {
+		align-self: flex-end;
+		flex: 1;
+	}
+
+	#hero .details {
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		min-width: fit-content;
+
+		padding: 6rem 6rem;
+	}
+}
+
+@media (min-width: 870px) {
+	#hero .content {
+		max-width: 90rem;
+	}
+
+	#hero .content .wrapper {
+		max-width: 70rem;
 	}
 
 	#hero .details {
