@@ -158,10 +158,12 @@ body.menu-expanded button path {
 		color: initial;
 		background-color: initial;
 	}
+
 	nav#navigation {
 		display: flex;
 		justify-content: space-around;
 	}
+
 	nav#navigation {
 		margin-inline: auto;
 	}
@@ -179,9 +181,34 @@ body.menu-expanded button path {
 	}
 
 	nav#navigation .menu ul li a {
+		font-weight: 700;
 		font-size: 1.6rem;
 		line-height: 2.1rem;
 		color: var(--brand-primary);
+
+		position: relative;
+	}
+
+	nav#navigation .menu ul li a::after {
+		content: '';
+		position: absolute;
+		bottom: -25px;
+		left: -7px;
+		width: 0%;
+		height: 3px;
+		background-color: var(--brand-primary);
+
+		transition: 0.3s all;
+	}
+
+	nav#navigation .menu ul li a:hover::after,
+	nav#navigation .menu ul li a.active::after {
+		width: 135%;
+	}
+
+	nav#navigation.scroll .menu ul li a:hover::after,
+	nav#navigation.scroll .menu ul li a.active::after {
+		background-color: var(--brand-light);
 	}
 
 	nav#navigation.scroll .menu ul li a {
